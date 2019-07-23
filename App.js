@@ -8,10 +8,10 @@ import reducer from './reducers'
 export default class App extends React.Component {
     render() {
         return (
-            <Provider store = {createStore(reducer)}>
-            <View>
-                <AddEntry />
-            </View>
+            <Provider store={createStore(reducer)}>
+                <View style={{flex: 1}}>
+                    <AddEntry />
+                </View>
             </Provider>
         )
     }
